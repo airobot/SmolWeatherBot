@@ -13,7 +13,7 @@ url = 'http://temp.olegt.ru/2/'
 Telegram::Bot::Client.run(TOKEN) do |bot|
 	bot.listen do |message|
 		case message.text
-		when '/start', 'start start'
+		when '/start', 'start start', 'привет', 'Привет'
 			bot.api.send_message(
 			chat_id: message.chat.id,
 			text: "Приветствую, #{message.from.first_name}")
