@@ -36,7 +36,8 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
 		else
 			bot.api.send_message(
 			chat_id: message.chat.id,
-			text: "Труляля")
+			text: "Простите, я еще не научился обрабатывать данные запросы. Вы можете написать, моему создателю, на почту - airobot67@gmail.com.\n
+			Опишите проблему и скоро создатель ответить вам.")
 		end
 	end
 end
