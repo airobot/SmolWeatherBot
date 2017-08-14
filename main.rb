@@ -32,9 +32,11 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
 			end
 			bot.api.send_message(
 			chat_id: message.chat.id,
-			text: ("Сейчас за окном #{temp['tempws']}" + "°С, #{cloud}\n"
-				+ "Температура на южной стороне: #{temp['tempws_s']}°С\n"
-				+ "Температура на северной стороне: #{temp['tempws_n']}°С"))
+			text: ("Сейчас за окном #{temp['tempws']}" + "°С, #{cloud}\n" 
+				# + "Температура на южной стороне: #{temp['tempws_s']}°С\n"
+				# + "Температура на северной стороне: #{temp['tempws_n']}°С"
+				)
+			)
 		else
 			bot.api.send_message(
 			chat_id: message.chat.id,
